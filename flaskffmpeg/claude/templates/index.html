@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditeur Vidéo - Drawflow + FFmpeg</title>
+    
+    <!-- Drawflow CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/drawflow@0.0.60/dist/drawflow.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-video"></i> Éditeur Vidéo FFmpeg</h1>
+            <div class="header-actions">
+                <button id="clearBtn" class="btn btn-warning">
+                    <i class="fas fa-trash"></i> Effacer
+                </button>
+                <button id="processBtn" class="btn btn-success">
+                    <i class="fas fa-play"></i> Traiter la vidéo
+                </button>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Sidebar avec les filtres -->
+            <aside class="sidebar">
+                <div class="upload-section">
+                    <h3><i class="fas fa-upload"></i> Charger une vidéo</h3>
+                    <input type="file" id="videoUpload" accept="video/*" class="file-input">
+                    <label for="videoUpload" class="file-label">
+                        <i class="fas fa-cloud-upload-alt"></i> Choisir un fichier
+                    </label>
+                    <div id="videoInfo" class="video-info"></div>
+                </div>
+
+                <div class="filters-section">
+                    <h3><i class="fas fa-filter"></i> Filtres disponibles</h3>
+                    <div id="filtersList" class="filters-list">
+                        <!-- Les filtres seront chargés ici -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Zone Drawflow -->
+            <main class="editor-area">
+                <div id="drawflow" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </main>
+        </div>
+
+        <!-- Section de résultat -->
+        <div id="resultSection" class="result-section" style="display: none;">
+            <h3><i class="fas fa-check-circle"></i> Vidéo traitée</h3>
+            <div id="resultContent"></div>
+        </div>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin fa-3x"></i>
+            <p>Traitement en cours...</p>
+        </div>
+    </div>
+
+    <!-- Drawflow JS -->
+    <script src="https://cdn.jsdelivr.net/npm/drawflow@0.0.60/dist/drawflow.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
