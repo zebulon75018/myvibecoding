@@ -1,5 +1,7 @@
 # Éditeur Vidéo FFmpeg avec Drawflow
 
+![](https://github.com/zebulon75018/myvibecoding/blob/main/flaskffmpeg/assets/vibeclaude.png?raw=true)
+
 Une application web interactive pour traiter des vidéos en utilisant FFmpeg avec une interface visuelle basée sur Drawflow.
 
 ## Fonctionnalités
