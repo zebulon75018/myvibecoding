@@ -1,6 +1,10 @@
 # myvibecoding
 my test with vibe coding ( but not working out of the box, so I make it works )
 
+On this repository : 
+
+![](https://github.com/zebulon75018/myvibecoding/blob/main/flaskffmpeg/assets/ffmepgnodal.png?raw=true)
+
 https://github.com/zebulon75018/videotools
 
 ![](https://github.com/zebulon75018/videotools/blob/main/img/subtitle.gif?raw=true?raw=true)
