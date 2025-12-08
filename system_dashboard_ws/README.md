@@ -2,6 +2,8 @@
 
 Une application Flask moderne pour monitorer les performances système en temps réel avec **WebSockets** au lieu d'appels AJAX. Optimisée pour Linux.
 
+![](https://github.com/zebulon75018/myvibecoding/blob/main/system_dashboard_ws/monitorsystemws.png?raw=true)
+
 ## 🚀 Avantages des WebSockets
 
 ### Par rapport aux appels AJAX/Polling :
