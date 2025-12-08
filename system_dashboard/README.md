@@ -2,6 +2,8 @@
 
 Une application Flask moderne pour monitorer les performances système en temps réel avec un design élégant et des graphiques interactifs.
 
+![](https://github.com/zebulon75018/myvibecoding/blob/main/system_dashboard/monitorsystem.png?raw=true)
+
 ## Fonctionnalités
 
 ### 📊 Métriques Système
